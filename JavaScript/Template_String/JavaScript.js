@@ -4,6 +4,6 @@ const framework3 = 'Vue';
 
 let sonuc = `Yazdırmak istediklerim ${framework1} ${framework2} ${framework3}`
 
-ley html = `
+let html = `
 <h1>${framework1}</h1>
 `
