@@ -11,10 +11,9 @@ const liste = document.querySelectorAll('li');
 //foreach ile li taglerine gezinir
 liste.forEach(eleman => {
     eleman.addEventListener('click', e => {
-        console.log('Li tagine tıklandı');
+        e.stopPropagation(); //yayılmayı durdurur
+        //sadece li çalışır ve diğerleri etkilenmez
         console.log(e.target);
-        e.target.style.color = 'blue';
-        //tıklayınca rengi değişir
     })
 })
 
@@ -22,11 +21,11 @@ liste.forEach(eleman => {
 //li lere tıklanınca listeden kaldıracak ekle butonuna tıklayınca li ekleyecek
 
 const ul = document.querySelector('ul');
-liste.forEach(eleman => {
-    eleman.addEventListener('click', e => {
+ul.addEventListener('click', e => {
+    console.log(e.target);
+    if (e.target.tagName == 'LI') {
         e.target.remove();
-        //tıklayınca liyi siler 
-    })
+    }
 })
 
 buton.addEventListener('click', () => {
