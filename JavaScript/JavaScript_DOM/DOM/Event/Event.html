@@ -4,22 +4,31 @@
 <head>
     <meta charset="utf-8" />
     <title>Query Selector</title>
-    <link rel="stylesheet" href="style.css" />
-    <!--css verdik-->
+    <style>
+        li {
+            list-style-type: none;
+            max-width: 200px;
+            padding: 8px;
+            margin: 8px auto;
+            background: #eee;
+            border: 1px dashed white;
+        }
+    </style>
 </head>
 <body>
-    <h1>DOM</h1>
-    <h2 style="background-color:mediumpurple;">DOM</h2>
+    <div style="display:flex; justify-content:center; align-items:center;">
+        <h1 id="doms">Dom</h1>
+    </div>
+    <ul>
+        <li>C#</li>
+        <li>JS</li>
+        <li>HTML</li>
+        <li>Css</li>
 
-    <section>
-        <p>Selam</p>
-        <h2 class="icerik">Miray Durgun</h2>
-        <p>JS</p>
-        <p>C#</p>
-        <p>.Net</p>
-        <div>Project</div>
-    </section>
-
+    </ul>
+    <div style="display:flex; justify-content:center; align-items:center;">
+        <button style="width:800px; background-color:tomato; color:white;">Ekle</button>
+    </div>
 
     <script src="JavaScript.js"></script>
 </body>
