@@ -30,12 +30,3 @@ console.log(secim.parentElement);
 //tamamını seçti diğeri gibi tek tek değil
 console.log(secim.parentElement.parentElement);
 //ana elemente bodye gider başka olmadığından
-
-//sbling
-/*HTML öğesinin aynı düzeyde (aynı ebeveyn öğede) bulunan diğer öğeleri ifade eder. Bir HTML öğesinin kardeşleri, aynı ebeveyn öğede bulunan diğer öğelerdir.*/
-
-console.log(baslik.nextElementSibling);
-console.log(baslik.previousElementSibling);
-
-
-
