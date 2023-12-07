@@ -21,5 +21,41 @@ form.addEventListener('submit', e => {
     //console.log(score);
 
     result.classList.remove('d-none');
-    result.querySelector('span').textContent=`${score}%`;
+
+    let puan = 0;
+    const bastir = setInterval(() => {
+        result.querySelector('span').textContent = `${puan}%`;
+        if (puan == score) {
+            clearInterval(bastir);
+        }
+        else {
+            puan++;
+        }
+
+    }, 10);
+
 })
+
+
+
+
+
+
+// setTimeout kod bir defa çalışır setInterval ise her seferinde çalışır
+//setTimeout(() => {
+//    console.log('Miray');
+//}, 2000);
+
+//setInterval(() => {
+//    console.log('Miray');
+//}, 1000);
+
+
+//let i = 0;
+//const bastir = setInterval(() => {
+//    console.log('Miray');
+//    i++;
+//    if (i == 4) { //setintevali durdurur durdurabilmesi için değişken atadık
+//        clearInterval(bastir);
+//    }
+//}, 1000);
